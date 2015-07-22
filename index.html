@@ -7,6 +7,17 @@
 </head>
 <body>
   <input type="text" ng-model="name">
-  <h2>Welcome {{name}}</h2>
+  <select ng-model="title">
+  	<option value="a">A</option>
+  	<option value="b">B</option>
+  	<option value="c">C</option>
+  	<option value="d">D</option>
+  </select>
+  <input type="radio" name="drink" value="tea" ng-model="drink">tea
+  <input type="radio" name="drink" value="coffee" ng-model="drink">coffee
+
+  <input type="checkbox" ng-model="fav" name="string" ng-true-value=" movies " ng-false-value=" cricket ">
+
+  <h2>Welcome {{name}} <br>Selected option is {{title}}<br>Favourite Drink is {{drink}}<br>my Favourite is {{fav}}</h2>
 </body>
 </html>
